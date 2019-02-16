@@ -1,0 +1,20 @@
+github账号：
+honeywang991
+wangfang123@!
+
+git 命令      
+cd 到工程目录下面   //进入到工程文件夹下
+git init  //初始化
+git add 123.txt  / git add .   //将所有文件添加到仓库
+git commit -m "添加代码"   //添加代码
+git remote add origin https://github.com/honeywang991/test01.git  //关联远程仓库，https就是仓库的地址
+git pull origin master //将文件推送到远程仓库
+git push -u origin master //如果报错--->
+ 
+需要执行拉去readme.md文件
+git pull --rebase origin master //将git仓库的readme.md文件拉到本地工程文件下
+g'i't push -u origin master //推送到远程仓库
+
+
+
+  
