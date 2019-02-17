@@ -1,6 +1,6 @@
 
 def read_data(file):
-    file = open(r'D:\wf\python9\class_0816\class_0811_work\test_data','r',encoding='utf-8')
+    file = open(r'C:\Users\Administrator\Desktop\gitwork\python9\class_0811_homework\test_data_1','r',encoding='utf-8')
     test_data = file.readlines()
     #print("第一行数据："，test_data[0])
     list_data=[]
@@ -18,5 +18,6 @@ def read_data(file):
     return list_data
 
 if __name__ == '__main__':
-    result=read_data(r'D:\wf\python9\class_0816\class_0811_work\test_data')
+    result=read_data(r'C:\Users\Administrator\Desktop\gitwork\python9\class_0811_homework\test_data_1')
     print(result)
+    # C:\Users\Administrator\Desktop\gitwork\python9\class_0811_homework\test_data_1

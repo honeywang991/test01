@@ -1,5 +1,5 @@
 import unittest
-from class_0816.class_0811_work.math import math
+from class_0811_homework import math
 # D:\wf\python9\class_0816\class_0811_work
 
 class TestMath(unittest.TestCase):

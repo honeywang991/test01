@@ -1,6 +1,7 @@
 
 
-git 命令      
+git 命令     
+git clone  URL 
 cd 到工程目录下面   //进入到工程文件夹下
 git init  //初始化
 git add 123.txt  / git add .   //将所有文件添加到仓库
