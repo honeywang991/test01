@@ -12,15 +12,18 @@
 <style type="text/css" media="screen">
 body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 80%; }
 table       { font-size: 100%; }
+
 /* -- heading ---------------------------------------------------------------------- */
 .heading {
     margin-top: 0ex;
     margin-bottom: 1ex;
 }
+
 .heading .description {
     margin-top: 4ex;
     margin-bottom: 6ex;
 }
+
 /* -- report ------------------------------------------------------------------------ */
 #total_row  { font-weight: bold; }
 .passCase   { color: #5cb85c; }
@@ -34,6 +37,7 @@ table       { font-size: 100%; }
 <body >
 <script language="javascript" type="text/javascript">
 output_list = Array();
+
 /*level 调整增加只显示通过用例的分类 --Findyou
 0:Summary //all hiddenRow
 1:Failed  //pt hiddenRow, ft none
@@ -62,6 +66,7 @@ function showCase(level) {
             }
         }
     }
+
     //加入【详细】切换文字变化 --Findyou
     detail_class=document.getElementsByClassName('detail');
 	//console.log(detail_class.length)
@@ -76,6 +81,7 @@ function showCase(level) {
 		}
 	}
 }
+
 function showClassDetail(cid, count) {
     var id_list = Array(count);
     var toHide = 1;
@@ -106,6 +112,7 @@ function showClassDetail(cid, count) {
         }
     }
 }
+
 function html_escape(s) {
     s = s.replace(/&/g,'&amp;');
     s = s.replace(/</g,'&lt;');
@@ -116,12 +123,13 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">Python9期</h1>
 <p class='attribute'><strong>测试人员 : </strong> 最棒QA</p>
-<p class='attribute'><strong>开始时间 : </strong> 2019-02-08 21:25:36</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.001953</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-02-17 16:16:05</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.002000</p>
 <p class='attribute'><strong>测试结果 : </strong> 共 4，通过 3，错误 1，通过率= 75.00%</p>
 
 <p class='description'></p>
 </div>
+
 
 
 <p id='show_detail_line'>
@@ -163,6 +171,7 @@ function html_escape(s) {
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
     <div id='div_pt1_1' class="collapse">  -->
+
     <!-- 默认展开错误信息 -Findyou -->
     <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
     <div id='div_pt1_1' class="collapse in">
@@ -182,6 +191,7 @@ pt1_1: 测试执行结果是：9
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
     <div id='div_pt1_2' class="collapse">  -->
+
     <!-- 默认展开错误信息 -Findyou -->
     <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
     <div id='div_pt1_2' class="collapse in">
@@ -201,6 +211,7 @@ pt1_2: 测试执行结果是：-9
     <!--默认收起错误信息 -Findyou
     <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
     <div id='div_pt1_3' class="collapse">  -->
+
     <!-- 默认展开错误信息 -Findyou -->
     <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
     <div id='div_pt1_3' class="collapse in">
@@ -220,15 +231,16 @@ pt1_3: 执行用例出错了，报的错是：0.3 != 0.30000000000000004
     <!--默认收起错误信息 -Findyou
     <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_4'>错误</button>
     <div id='div_ft1_4' class="collapse">  -->
+
     <!-- 默认展开错误信息 -Findyou -->
     <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_4'>错误</button>
     <div id='div_ft1_4' class="collapse in">
     <pre>
     
 ft1_4: Traceback (most recent call last):
-  File "D:\wf\python9\class_0816\class_0811_work\math_method.py", line 16, in test_add
+  File "C:\Users\Administrator\Desktop\gitwork\python9\class_0816\class_0811_work\math_method.py", line 16, in test_add
     result = math().add(self.a,self.b)
-  File "D:\wf\python9\class_0816\class_0811_work\math.py", line 5, in add
+  File "C:\Users\Administrator\Desktop\gitwork\python9\class_0816\class_0811_work\math.py", line 5, in add
     return (a+b) #return print
 TypeError: unsupported operand type(s) for +: 'int' and 'str'
 
@@ -253,5 +265,6 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
     <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
     </span></a></div>
     
+
 </body>
 </html>

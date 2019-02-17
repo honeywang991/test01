@@ -4,7 +4,7 @@ import json
 
 class ReadData:
     def read_data(self):
-        file=open(r'D:\wf\python9\class_0816\class_0811_work\test_data','r+')#read write append
+        file=open(r'C:\Users\Administrator\Desktop\gitwork\python9\class_0816\class_0811_work\test_data_1','r+')#read write append
 # file.read()
 # file.readline()
 # print(file.readlines())
