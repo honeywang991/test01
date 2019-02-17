@@ -1,6 +1,4 @@
-github账号：
-honeywang991
-wangfang123@!
+
 
 git 命令      
 cd 到工程目录下面   //进入到工程文件夹下
