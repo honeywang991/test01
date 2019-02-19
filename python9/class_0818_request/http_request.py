@@ -3,7 +3,11 @@ import requests
 #如果要完成不同接口的请求，为了最高的复用性
 #我们可以封装成函数
 #升级为类
+
+#写这个类的目的： 完成接口测试
 class HttpRequest:
+
+
     #1
     def http_request(self,url,request_data,method):
         #请求地址
@@ -30,7 +34,7 @@ class HttpRequest:
         # #状态码
         # print(response.status_code)
         # #响应数据
-        print(response.json()) #只有当你返回的数据格式 是json 采用json去解析
+        # print(response.json()) #只有当你返回的数据格式 是json 采用json去解析
         # print(response.text)  # html xml json 格式都可以解析
         #有时间就可以去了解下装饰器
 
